@@ -7,11 +7,12 @@ Convert your latex files to pdf format.
 - `nodejs` v6.9.4
 
 # Usage
-- Install: 
+- Install:
 ```
 npm install node-latex-pdf
 ```
 - Import in your code
+    - **Notice:** The path in latex document must using absolutive path!
 ```js
 const selflatex = require('node-latex-pdf');
 
@@ -23,5 +24,5 @@ selflatex(__dirname + '/src/document.tex', __dirname + '/dest/', (err,msg) => {
 });
 ```
 
-# Author 
+# Author
 - Kevin Cyu, kevinbird61@gmail.com
