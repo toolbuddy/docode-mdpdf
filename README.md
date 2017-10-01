@@ -1,2 +1,27 @@
-# docode-mdpdf
-Module of docode, markdown to pdf maker.
+# node-latex-pdf
+
+Convert your latex files to pdf format.
+
+# Prerequisite
+- Install `MiKTeX 2.9` on your environment
+- `nodejs` v6.9.4
+
+# Usage
+- Install: 
+```
+npm install node-latex-pdf
+```
+- Import in your code
+```js
+const selflatex = require('node-latex-pdf');
+
+selflatex(__dirname + '/src/document.tex', __dirname + '/dest/', (err,msg) => {
+    if(err)
+      console.log(`Error, ${msg}`);
+    else
+      console.log(`Success! ${msg}`);
+});
+```
+
+# Author 
+- Kevin Cyu, kevinbird61@gmail.com
